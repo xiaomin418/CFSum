@@ -127,7 +127,7 @@ def infer(config_name = './configs/config.json', model_path=None):
     print("device id: ",device)
     tokenizer = BertTokenizer.from_pretrained(args.toker, do_lower_case='uncased' in args.toker)
     test_dataloder = get_data_loader(args, args.test_image_path, args.test_text_path, args.test_summri_path, tokenizer,
-                                     device, args.test_useful_pic_path, args.test_useless_pic_path,
+                                     device, None, None,
                                      is_test=True)
     test_dataloder = PrefetchLoader(test_dataloder, device_id=device)
 
@@ -256,5 +256,5 @@ if __name__ == '__main__':
     config_name = sys.argv[1]
     model_filename = sys.argv[2]
     sys.argv = sys.argv[:-2]
-    # infer(config_name, model_filename)
-    infer_many(config_name, model_filename,[10,11,12,13,14,15,18,20,21,22,23]) # 18,19,21,22,23,24 #10,11,12,13,14,15
+    infer(config_name, model_filename)
+    # infer_many(config_name, model_filename,[10,11,12,13,14,15,18,20,21,22,23]) # 18,19,21,22,23,24 #10,11,12,13,14,15

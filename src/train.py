@@ -400,10 +400,10 @@ def train(config_name = './configs/config.json'):
         model, 'module') else model.train()
     for epoch in range(args.epoches):
         dev_loader = get_data_loader(args, args.dev_image_path, args.dev_text_path, args.dev_summri_path, tokenizer,
-                                     device, args.dev_useful_pic_path, args.dev_useless_pic_path,
+                                     device, None, None,
                                      random_seeds[epoch])
         train_loader = get_data_loader(args, args.train_image_path, args.train_text_path, args.train_summri_path,
-                                       tokenizer, device, args.train_useful_pic_path, args.train_useless_pic_path,
+                                       tokenizer, device, None, None,
                                        random_seeds[epoch])
         model.module.train() if hasattr(
             model, 'module') else model.train()
