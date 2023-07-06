@@ -93,12 +93,12 @@ class MultiDataset(Dataset):
         self.tokenizer =  tokenizer
         self.sent_summarizations=open(sent_summaris_file,'r').readlines()
 
-        if config.comple_of_high_freq:
-            image_useful_file = image_useless_file[:-7]+'_comple.pickle'
-        self.image_useful =  pickle.load(open(image_useful_file, 'rb'))
-        self.image_useless = pickle.load(open(image_useless_file, 'rb'))
-        if self.config.remove_high_freq:
-            self.image_useful = set(self.image_useful)-self.image_useless
+        # if config.comple_of_high_freq:
+        #     image_useful_file = image_useless_file[:-7]+'_comple.pickle'
+        # self.image_useful =  pickle.load(open(image_useful_file, 'rb'))
+        # self.image_useless = pickle.load(open(image_useless_file, 'rb'))
+        # if self.config.remove_high_freq:
+        #     self.image_useful = set(self.image_useful)-self.image_useless
         # Init and Build vocab
         self.random_seed = random_seed
         self.balance_useful = balance_useful
