@@ -30,13 +30,9 @@ We use NLVR2 as an end-to-end example for using this code base.
 
   1. Dataset download: Download the dataset from [ZNLP/ZNLP-Dataset (github.com)](https://github.com/ZNLP/ZNLP-Dataset) or the google driver https://drive.google.com/file/d/14LoM5-6h1eFa9-NAPuAJnAIyNXF8xNpu/view
 
-  2. Feature Extract: Utilize the BUTD to extract the feature of images, the data format can refer to `./example`
+  2. Feature Extract: Utilize the [BUTD](https://hub.docker.com/r/chenrocks/butd-caffe) to extract the feature of images, the data format can refer to `./example`
 
   3. Download pre-trained [UNITER](https://github.com/ChenRocks/UNITER) checkpoint: `>> sh ./utils/download_pretrained_uniter.sh`. 
-
-     
-
-     
 
 * **train**
 
