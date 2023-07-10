@@ -12,7 +12,7 @@
 
   "batch_size": 4096,
   "beam_size": 4,
-  "meta_file": "/data/meihuan2/dataset/UNITER/vqa_devval.db/meta.json",
+  "meta_file": "./configs/meta.json",
   "max_txt_len": 60,
   "max_dec_steps": 40,
   "min_dec_steps":4,
