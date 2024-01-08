@@ -6,7 +6,7 @@ This is the official repository of [CFSum]() (ACL 2023).
 
 Some code in this repo are copied/modified from opensource implementations made available by [UNITER](https://arxiv.org/abs/1909.11740)
 
-The image features are extracted using [BUTD]([chenrocks/butd-caffe Tags | Docker Hub](https://hub.docker.com/r/chenrocks/butd-caffe)).
+The image features are extracted using [BUTD]([Docker Hub](https://hub.docker.com/r/airsplay/bottom-up-attention)).
 
 ## Requirements
 
@@ -67,4 +67,14 @@ We use the [files2rouge]([ZNLP/ZNLP-Dataset (github.com)](https://github.com/plt
 ```
 
 
+
+## Docker Fetch
+
+1. docker install on Ubuntu: refer to [blog]([Ubuntu · Docker -- 从入门到实践 (docker-practice.github.io)](https://docker-practice.github.io/zh-cn/install/ubuntu.html))
+
+如果遇到镜像无法下载，可使用国内镜像：[Docker快速入门二：Docker配置国内镜像源、常用命令_docker设置镜像-CSDN博客](https://blog.csdn.net/houpk999/article/details/106693215)
+
+[Docker将镜像导出到本地,上传至内网服务器上-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/2161247)
+
+镜像导入导出： https://blog.csdn.net/u010797364/article/details/120430270
 
