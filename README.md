@@ -2,7 +2,7 @@
 
 This is the official repository of [CFSum]() (ACL 2023).
 
-![framework](./framework.jpg)
+![framework](framework.jpg)
 
 Some code in this repo are copied/modified from opensource implementations made available by [UNITER](https://arxiv.org/abs/1909.11740)
 
