@@ -4,9 +4,9 @@ This is the official repository of [CFSum]() (ACL 2023).
 
 ![framework](./framework.jpg)
 
-Some code in this repo are copied/modified from opensource implementations made available by [UNITER](https://arxiv.org/abs/1909.11740)
+Some code in this repo are copied/modified from opensource implementations made available by [UNITER](https://github.com/ChenRocks/UNITER/tree/master)
 
-The image features are extracted as [UNITER](https://arxiv.org/abs/1909.11740). Due to some problems in image feature extraction by [UNITER](https://arxiv.org/abs/1909.11740), we tried to restore the image feature extraction process of UNITER. Specifically: 
+The image features are extracted as [UNITER](https://github.com/ChenRocks/UNITER/tree/master). Due to some problems in image feature extraction by [UNITER](https://github.com/ChenRocks/UNITER/tree/master), we tried to restore the image feature extraction process of UNITER. Specifically: 
 
 (1) UNITER uses [BUTD](https://github.com/peteanderson80/bottom-up-attention) image feature extractor faster-rcnn, thus we use [BUTD docker](https://hub.docker.com/r/airsplay/bottom-up-attention) to extract image feature; 
 
@@ -25,10 +25,8 @@ We only support Linux with NVIDIA GPUs. We test on Ubuntu 16.04 and 3090 cards.
 
 ## Quick Start
 
-*NOTE*: Please `bash scripts/download_pretrained.sh $PATH_TO_STORAGE` to get our latest pretrained
+*NOTE*: Please refer to [UNITER](https://github.com/ChenRocks/UNITER/tree/master) `bash scripts/download_pretrained.sh $PATH_TO_STORAGE` to get pretrained
 checkpoints. This will download both the base and large models.
-
-We use NLVR2 as an end-to-end example for using this code base.
 
 * **Data preparation**
 
