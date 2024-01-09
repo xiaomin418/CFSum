@@ -6,7 +6,11 @@ This is the official repository of [CFSum]() (ACL 2023).
 
 Some code in this repo are copied/modified from opensource implementations made available by [UNITER](https://arxiv.org/abs/1909.11740)
 
-The image features are extracted using [BUTD]([Docker Hub](https://hub.docker.com/r/airsplay/bottom-up-attention)).
+The image features are extracted as [UNITER](https://arxiv.org/abs/1909.11740). Due to some problems in image feature extraction by [UNITER](https://arxiv.org/abs/1909.11740), we tried to restore the image feature extraction process of UNITER. Specifically: 
+
+(1) UNITER uses [BUTD](https://github.com/peteanderson80/bottom-up-attention) image feature extractor faster-rcnn, thus we use [BUTD docker]([Docker Hub](https://hub.docker.com/r/airsplay/bottom-up-attention)) to extract image feature; 
+
+(2) The checkpoint of the faster-rcnn model is derived from the [pretrain-model](https://storage.googleapis.com/up-down-attention/resnet101_faster_rcnn_final.caffemodel) provided by [BUTD](https://github.com/peteanderson80/bottom-up-attention).
 
 ## Requirements
 
